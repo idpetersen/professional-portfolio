@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* Buttons in nav bar */
+
+.bottom-border {
+    width: 180px;
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: normal;
+    text-shadow: 2px 2px 2px #000;
+  }
+  
+  .bottom-border::before,
+  .bottom-border::after {
+    content: "";
+    position: absolute;
+  }
+  
+  .bottom-border::before {
+    top: 10px;
+    width: 100%;
+    height: 30px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transition: all 300ms linear;
+  }
+  
+  .bottom-border:hover:before {
+    width: 0px;
+    opacity: 0;
+  }
+  
+  .bottom-border::after {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    width: 0px;
+    height: 100%;
+    transition: all 300ms linear;
+  }
+  
+  .bottom-border:hover:after {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+  }
+
+/* Header section and nav bar */
+
+header {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: yellowgreen;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header h1{
+    background-color: fuchsia;
+    padding-left: 30px;
+    display: inline-block;
+    font-size: 48px; 
+}
+
+.bottom-border {
+    border-bottom: #ffffff solid 3px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Under nav bar and hero content */
+
+.center-image{
+    background-image: url("./photos/header-background.jpg");
+    height: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.center-image h1{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    background-color: forestgreen;
+    margin:  30px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-left: 100px;
+}
+
+
+/* about me section */
+
+.about-me{
+    display: flex;
+}
+
+.about-me .aboutme-left{
+    flex: 1 1 30%;
+    padding-right: 10px;
+    min-width: 8ch;
+}
+
+.about-me .aboutme-right{
+    flex: 1 1 70%;
+    border-left: solid green 3px;
+    gap: 1em;
+    padding-left: 30px;
+}
+
+/* Work section using flex boxes */
+
+main .work{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 15px;
+    justify-content: start;
+    padding-top: 20px;
+}
+
+.work h2{
+    width: 35vh;
+    align-content: end;
+}
+
+main .work-examples{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-content: start;
+    padding:0px;
+    border-left: darkblue solid 3px;
+}
+
+.card:hover{
+    box-shadow: 10px 10px 10px 10px black;
+    opacity: 50%;
+}
+
+.card{
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    padding: 0;
+    margin: 10px;
+    width: 45%;
+    background: cyan;
+}
+
+.beefy{
+    width: 100%;
+}
+
+.card img{
+    width: 100%;
+    padding: 0;
+    border: 3px solid cyan;
+}
+
+.beefy img{
+    width: 60vw;
+    height: 60vh;
+}
+
+.card h3{
+    position: absolute;
+    bottom: 25px;
+    left: 3px;
+    color:darkblue;
+    font-size: 20px;
+    background-color: cyan;
+    padding: 5px;
+}
+
+.card p{
+    position: absolute;
+    bottom: 7px;
+    left: 3px;
+    color:darkblue;
+    font-size: 12px;
+    background-color: cyan;
+    padding: 5px;
+}
+
+/* Bottom section */
+
+.contactme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid blue;
+    left: 300px;
+    margin: auto 180px auto 380px;
+    justify-content: space-between;
+}
+
+.contactme :hover{
+    color: cyan;
+    border-bottom: 3px solid
+}
