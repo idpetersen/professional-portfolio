@@ -114,7 +114,7 @@ header nav ul li {
     justify-content: flex-end;
     color: white;
     background-color: forestgreen;
-    margin:  30px;
+    margin: 30px;
 }
 
 
@@ -131,18 +131,16 @@ main{
 
 .about-me{
     display: flex;
+    margin-bottom: 16px;
 }
 
 .about-me .aboutme-left{
-    flex: 1 1 30%;
-    padding-right: 10px;
-    min-width: 8ch;
+    padding-right: 16px;
+    min-width: 32px;
 }
 
 .about-me .aboutme-right{
-    flex: 1 1 70%;
     border-left: solid green 3px;
-    gap: 1em;
     padding-left: 30px;
 }
 
@@ -152,13 +150,14 @@ main .work{
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 15px;
-    justify-content: start;
+    justify-content: space-evenly;
     padding-top: 20px;
 }
 
 .work h2{
-    width: 35vh;
+    width: 20%;
     align-content: end;
+    border-right: solid blue 3px;
 }
 
 main .work-examples{
@@ -167,7 +166,7 @@ main .work-examples{
     justify-content: start;
     align-content: start;
     padding:0px;
-    border-left: darkblue solid 3px;
+    /* border-left: darkblue solid 3px; */
 }
 
 .card:hover{
@@ -187,6 +186,7 @@ main .work-examples{
 
 .beefy{
     width: 100%;
+    padding: 0;
 }
 
 .card img{
@@ -196,8 +196,7 @@ main .work-examples{
 }
 
 .beefy img{
-    width: 60vw;
-    height: 60vh;
+    width: 100%;
 }
 
 .card h3{
@@ -222,17 +221,47 @@ main .work-examples{
 
 /* Bottom section */
 
-.contactme {
+.main-content{
+    margin: 20px auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-left: 3px solid blue;
-    left: 300px;
-    margin: auto 180px auto 380px;
-    justify-content: space-between;
+    flex: 1;
+}
+.content {
+    border-left: 5px solid #574935;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.contactme :hover{
-    color: cyan;
-    border-bottom: 3px solid
+.contact {
+    width: 100%;
+    padding: 30px 0;
 }
+
+.contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.left, .contact-left {
+    width: 10vw;
+}
+
+@media screen and (max-width: 320px) {
+    .contact-list {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+    }
+    .contact-list > li {
+        margin: 5px 0;
+    }
+
+    .contact {
+        padding: 0;
+    }
+}
+
