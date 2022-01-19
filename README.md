@@ -8,5 +8,5 @@ The main elements in this document are the nav bar, the hover effects of the but
 
 Included is a screenshot of what the page looks like:
 
-![](assets/photos/pagetop.png)
-![](assets/photos/pagebottom.png)
+![something](./assets/css/photos/pagetop.png)
+![something](./assets/css/photos/pagebottom.png)

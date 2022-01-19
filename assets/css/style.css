@@ -139,13 +139,10 @@ main{
     min-width: 32px;
 } */
 
-.aboutme-left{
-    border-right: solid green 3px;
-}
 
 .about-me .aboutme-right{
     /* border-left: solid green 3px; */
-    padding-left: 30px;
+    padding-left: 60px;
 }
 
 .title-left{
@@ -158,21 +155,19 @@ main{
     display: flex;
 }
 
-
+.about-me-text{
+    font-size: 25px;
+}
 
 main .work{
     display: flex;
     padding-top: 20px;
 }
 
-.work h2{
-    border-right: solid blue 3px;
-}
-
 main .work-examples{
     display: flex;
     flex-flow: row wrap;
-    padding:0px;
+    padding-left: 44px;
 }
 
 .card:hover{
