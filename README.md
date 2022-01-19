@@ -6,7 +6,6 @@ I spent around 20+ hours trying to cobble together all the elements I had learne
 
 The main elements in this document are the nav bar, the hover effects of the buttons, the hero picture, the about me section, the hover effects of the images in the work section, the use of flex boxes for the work section, and the contact me section on the bottom.
 
-Included is a screenshot of what the page looks like:
+Included is a gif of what the page looks like:
 
-![something](./assets/css/photos/pagetop.png)
-![something](./assets/css/photos/pagebottom.png)
+![using the page](./assets/css/photos/updated-portfolio.gif)
