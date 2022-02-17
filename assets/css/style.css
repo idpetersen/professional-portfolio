@@ -266,3 +266,9 @@ main .work-examples{
     }
 }
  */
+#contact-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
